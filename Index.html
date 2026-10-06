@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taberna Ramón — Santa Cruz de Tenerife</title>
+<meta name="description" content="Taberna Ramón. Cocina canaria y española, vinos, jamón y tapas en el corazón de Santa Cruz de Tenerife desde 1992.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{
+colors:{wine:'#651c24',cream:'#f3eadb',ink:'#18130f',gold:'#b89152'},
+fontFamily:{serif:['Georgia','serif'],sans:['Inter','ui-sans-serif','system-ui']}
+}}}
+</script>
+<style>
+html{scroll-behavior:smooth} body{background:#f3eadb;color:#18130f}
+.noise{background-image:radial-gradient(rgba(24,19,15,.08) .6px,transparent .6px);background-size:6px 6px}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s ease}
+.reveal.show{opacity:1;transform:none}
+.zoom img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.zoom:hover img{transform:scale(1.06)}
+.marquee{animation:move 24s linear infinite}
+@keyframes move{to{transform:translateX(-50%)}}
+.heroImg{animation:hero 1.5s ease both}
+@keyframes hero{from{transform:scale(1.08);opacity:.5}to{transform:scale(1);opacity:.72}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none}.marquee,.heroImg{animation:none}.zoom img{transition:none}}
+</style>
+</head>
+<body class="font-sans">
+
+<header class="fixed z-50 top-0 left-0 right-0 px-4 pt-4">
+ <div class="max-w-7xl mx-auto rounded-full bg-ink/90 text-cream backdrop-blur-xl px-5 py-3 flex items-center justify-between shadow-2xl">
+  <a href="#inicio" class="font-serif text-xl tracking-tight">TABERNA <span class="text-gold">RAMÓN</span></a>
+  <nav class="hidden md:flex gap-7 text-sm">
+   <a href="#historia" class="hover:text-gold transition">La casa</a>
+   <a href="#carta" class="hover:text-gold transition">La carta</a>
+   <a href="#ambiente" class="hover:text-gold transition">El ambiente</a>
+   <a href="#contacto" class="hover:text-gold transition">Contacto</a>
+  </nav>
+  <a href="tel:+34922241367" class="rounded-full bg-gold text-ink px-5 py-2.5 text-sm font-bold hover:scale-105 transition">Reservar mesa</a>
+ </div>
+</header>
+
+<main>
+<section id="inicio" class="min-h-screen relative overflow-hidden bg-ink text-cream flex items-end">
+ <img class="heroImg absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=2200&q=85" alt="Mesa de restaurante con comida y vino">
+ <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/15"></div>
+ <div class="absolute inset-0 bg-gradient-to-r from-ink/75 to-transparent"></div>
+ <div class="relative max-w-7xl mx-auto w-full px-5 pb-16 md:pb-24 pt-40">
+  <div class="max-w-4xl reveal">
+   <p class="uppercase tracking-[.3em] text-xs text-gold font-bold mb-5">Santa Cruz de Tenerife · Desde 1992</p>
+   <h1 class="font-serif text-[clamp(4rem,10vw,9rem)] leading-[.78] tracking-[-.06em]">Una taberna.<br><i class="font-normal text-gold">De las de verdad.</i></h1>
+   <p class="mt-8 max-w-xl text-lg md:text-xl text-cream/75 leading-relaxed">Buen producto, cocina canaria y española, vino y ese ambiente que hace que una comida termine convirtiéndose en sobremesa.</p>
+   <div class="mt-8 flex flex-wrap gap-3">
+    <a href="#carta" class="bg-cream text-ink rounded-full px-6 py-3 font-bold">Ver la carta</a>
+    <a href="tel:+34922241367" class="border border-cream/40 rounded-full px-6 py-3 font-bold hover:bg-cream/10 transition">922 24 13 67</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="bg-wine text-cream overflow-hidden border-y border-gold/30">
+ <div class="marquee whitespace-nowrap py-3 uppercase tracking-[.2em] text-xs font-bold">
+  Jamón serrano · Ibérico curado · Queso · Tapas · Carnes · Pescados · Mariscos · Vino · Cocina canaria · Jamón serrano · Ibérico curado · Queso · Tapas · Carnes · Pescados · Mariscos · Vino · Cocina canaria ·
+ </div>
+</div>
+
+<section id="historia" class="py-24 md:py-32">
+ <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-12 gap-12 items-center">
+  <div class="lg:col-span-5 reveal">
+   <p class="text-wine uppercase tracking-[.25em] text-xs font-bold">01 / La casa</p>
+   <h2 class="font-serif text-6xl md:text-8xl leading-[.82] mt-5">Más de<br><i>30 años</i><br>haciendo<br>taberna.</h2>
+  </div>
+  <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4 reveal">
+   <div class="zoom rounded-[2rem] overflow-hidden h-[440px] sm:mt-14"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85" class="w-full h-full object-cover" alt="Interior acogedor de restaurante" loading="lazy"></div>
+   <div class="bg-ink text-cream rounded-[2rem] p-8 md:p-10 flex flex-col justify-between min-h-[440px]">
+    <div class="text-gold text-5xl font-serif">1992</div>
+    <div><p class="font-serif text-3xl leading-tight">Una familia, una barra, buenos productos y muchas historias.</p><p class="mt-5 text-cream/60 leading-relaxed">La propia Taberna Ramón sitúa sus comienzos en 1992, en la Rambla de Santa Cruz.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="carta" class="bg-ink text-cream py-24 md:py-32">
+ <div class="max-w-7xl mx-auto px-5">
+  <div class="flex flex-col md:flex-row justify-between gap-8 items-end reveal">
+   <div><p class="text-gold uppercase tracking-[.25em] text-xs font-bold">02 / La carta</p><h2 class="font-serif text-6xl md:text-8xl leading-[.82] mt-5">Lo bueno<br><i>se comparte.</i></h2></div>
+   <p class="max-w-sm text-cream/60 leading-relaxed">La propuesta combina cocina canaria y española, tapas, carnes, pescados, mariscos, productos ibéricos y una selección de vinos.</p>
+  </div>
+  <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+   <article class="zoom rounded-[1.75rem] overflow-hidden h-[430px] relative reveal"><img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1000&q=85" class="w-full h-full object-cover" alt="Carne a la parrilla" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-black/85 to-transparent"></div><div class="absolute bottom-0 p-7"><span class="text-gold text-xs uppercase tracking-widest">Producto</span><h3 class="font-serif text-4xl mt-2">Carnes</h3></div></article>
+   <article class="zoom rounded-[1.75rem] overflow-hidden h-[430px] relative reveal"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85" class="w-full h-full object-cover" alt="Plato de tapas" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-black/85 to-transparent"></div><div class="absolute bottom-0 p-7"><span class="text-gold text-xs uppercase tracking-widest">Para picar</span><h3 class="font-serif text-4xl mt-2">Tapas</h3></div></article>
+   <article class="zoom rounded-[1.75rem] overflow-hidden h-[430px] relative reveal"><img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1000&q=85" class="w-full h-full object-cover" alt="Vino servido en mesa" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-black/85 to-transparent"></div><div class="absolute bottom-0 p-7"><span class="text-gold text-xs uppercase tracking-widest">Bodega</span><h3 class="font-serif text-4xl mt-2">Vinos</h3></div></article>
+  </div>
+  <div class="mt-12 text-center"><a href="#contacto" class="inline-block border border-gold/60 text-gold rounded-full px-7 py-3 hover:bg-gold hover:text-ink transition font-bold">Ven a probarlo →</a></div>
+ </div>
+</section>
+
+<section id="ambiente" class="py-24 md:py-32 noise">
+ <div class="max-w-7xl mx-auto px-5">
+  <div class="max-w-3xl reveal"><p class="text-wine uppercase tracking-[.25em] text-xs font-bold">03 / El ambiente</p><h2 class="font-serif text-6xl md:text-8xl leading-[.82] mt-5">Aquí vienes<br><i>a quedarte.</i></h2></div>
+  <div class="mt-14 grid lg:grid-cols-12 gap-5 items-stretch">
+   <div class="lg:col-span-8 zoom rounded-[2rem] overflow-hidden min-h-[500px] reveal"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1500&q=85" class="w-full h-full object-cover" alt="Ambiente de bar y restaurante" loading="lazy"></div>
+   <div class="lg:col-span-4 bg-gold rounded-[2rem] p-8 md:p-10 flex flex-col justify-between reveal">
+    <span class="text-ink/60 uppercase tracking-[.2em] text-xs font-bold">Santa Cruz</span>
+    <div><p class="font-serif text-4xl md:text-5xl leading-none">Una barra, una mesa y el tiempo suficiente.</p><p class="mt-6 text-ink/65 leading-relaxed">Un local familiar y acogedor en la Rambla de Santa Cruz, frente a la Plaza de Toros.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="bg-wine text-cream py-24 md:py-28">
+ <div class="max-w-7xl mx-auto px-5 text-center reveal">
+  <p class="text-gold uppercase tracking-[.3em] text-xs font-bold">La experiencia</p>
+  <blockquote class="font-serif text-4xl md:text-6xl max-w-4xl mx-auto mt-7 leading-tight">“El vino es una poesía embotellada”</blockquote>
+  <p class="mt-5 text-cream/60">— Robert Louis Stevenson</p>
+ </div>
+</section>
+
+<section id="contacto" class="py-24 md:py-32">
+ <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-16">
+  <div class="reveal"><p class="text-wine uppercase tracking-[.25em] text-xs font-bold">04 / Ven a vernos</p><h2 class="font-serif text-6xl md:text-8xl leading-[.82] mt-5">Tu mesa<br><i>te espera.</i></h2><p class="mt-8 text-black/60 max-w-md leading-relaxed">Estamos en el centro de Santa Cruz de Tenerife, en Rambla de Santa Cruz 56.</p></div>
+  <div class="bg-ink text-cream rounded-[2rem] p-8 md:p-10 reveal">
+   <div class="grid gap-7">
+    <div><span class="text-gold text-xs uppercase tracking-widest">Dirección</span><p class="font-serif text-2xl mt-2">Rambla de Santa Cruz, 56<br>38004 Santa Cruz de Tenerife</p></div>
+    <div><span class="text-gold text-xs uppercase tracking-widest">Reservas</span><a href="tel:+34922241367" class="block font-serif text-3xl mt-2 hover:text-gold transition">+34 922 24 13 67</a></div>
+    <div><span class="text-gold text-xs uppercase tracking-widest">Horario publicado</span><p class="mt-2 text-cream/70">Martes a sábado · 12:00 — 00:00<br>Lunes y domingo · Cerrado</p></div>
+    <a href="https://www.google.com/maps/search/?api=1&query=Taberna+Ramón+Rambla+de+Santa+Cruz+56+Santa+Cruz+de+Tenerife" target="_blank" rel="noopener" class="text-center rounded-full bg-gold text-ink py-3 font-bold hover:scale-[1.01] transition">Cómo llegar →</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="bg-ink text-cream/60 py-10">
+ <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row gap-5 justify-between text-sm">
+  <p><strong class="text-cream font-serif">TABERNA RAMÓN</strong> · Santa Cruz de Tenerife</p>
+  <p>© <span id="year"></span> · Cocina canaria y española</p>
+ </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
